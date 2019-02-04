@@ -1,9 +1,14 @@
 {
 	"name": "async-memoize-last",
 	"description": "A simple asynchronous memoization library that rememebers only the previous call.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"license": "MIT",
+	"author": {
+		"email": "me@jennmueng.com",
+		"name": "jennmueng",
+		"url": "https://github.com/jennmueng/"
+	},
 	"keywords": [
 		"async",
 		"asynchronous",
@@ -13,6 +18,10 @@
 		"api",
 		"call"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jennmueng/async-memoize-last"
+	},
 	"scripts": {
 		"test": "jest"
 	},
