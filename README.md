@@ -8,7 +8,9 @@ It memoizes and compares to your last call, if the parameters are exactly the sa
 
 This if to be used for making asynchronous requests that, if given the same parameters in a reasonable amount of time, will return the same response. This (obviously) will mess up api calls that return different results when called with the same params at different times. Use at your own descretion.
 
-## Equality Fuction
+## Use Cases
+
+Say there's an api call that you would need to perform multiple times that return the same result given the same parameters, like a distance calculation to an api that returns the distance between two points on the earth. You want to save up on costs so you don't want to perform two calls that will return the exact same result.
 
 ## Api
 
