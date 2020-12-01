@@ -14,10 +14,9 @@ export default function asyncMemoizeLast(call: Function, customEqual?: Function)
 					// Called before and previous arguments and the new arguments are exactly the same.
 					return resolve(prevResult);
 				}
-				const result = await call(...args);
+				prevResult = await call(...args);
 				prevArgs = args;
 				checkPrev = true;
-				prevResult = result;
 				return resolve(result);
 			} catch (e) {
 				// On an error, clear the previous result and args to force a refresh on next call.
